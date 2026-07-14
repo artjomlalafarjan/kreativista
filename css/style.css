@@ -188,15 +188,13 @@ button { font-family: inherit; }
   letter-spacing: -0.3px;
 }
 .logo-mark {
-  display: grid;
-  place-items: center;
-  width: 32px; height: 32px;
-  border-radius: 9px;
-  background: var(--accent);
-  font-size: 15px;
-  font-weight: 800;
-  color: white;
+  display: flex;
+  align-items: center;
+  width: 24px;
+  color: var(--text);
+  flex-shrink: 0;
 }
+.logo-mark svg { width: 100%; height: auto; display: block; }
 
 .main-nav {
   display: none;
@@ -940,9 +938,6 @@ button { font-family: inherit; }
   color: var(--text-dimmer);
   font-size: 13.5px;
 }
-.footer-bottom .logo { font-size: 15px; }
-.footer-bottom .logo-mark { width: 26px; height: 26px; font-size: 12px; border-radius: 7px; }
-
 /* ============ SCROLL TOP ============ */
 .scroll-top {
   position: fixed;
