@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PIXELWERK — Grafikdesign-Studio für moderne Websites</title>
+<meta name="description" content="PIXELWERK ist ein Grafikdesign-Studio spezialisiert auf moderne, conversion-starke Websites. Webdesign, UI/UX, Branding & E-Commerce aus einer Hand." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="noise-overlay"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">P</span>
+      <span class="logo-text">PIXELWERK</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#leistungen" class="nav-link">Leistungen</a>
+      <a href="#arbeiten" class="nav-link">Arbeiten</a>
+      <a href="#prozess" class="nav-link">Prozess</a>
+      <a href="#stimmen" class="nav-link">Stimmen</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+
+    <a href="#kontakt" class="btn btn-primary btn-nav">Projekt anfragen</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-grid"></div>
+
+    <div class="container hero-inner">
+      <div class="eyebrow reveal">
+        <span class="dot-pulse"></span>
+        Verfügbar für neue Projekte — Q3 2026
+      </div>
+
+      <h1 class="hero-title reveal">
+        Websites, die <span class="text-gradient">wirken.</span><br />
+        Design, das <span class="text-gradient">begeistert.</span>
+      </h1>
+
+      <p class="hero-subtitle reveal">
+        PIXELWERK ist ein Grafikdesign-Studio, spezialisiert auf moderne, conversion-starke
+        Websites. Wir verbinden Ästhetik mit Strategie — damit Ihre Marke nicht nur gut aussieht,
+        sondern auch performt.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#kontakt" class="btn btn-primary btn-lg magnetic">
+          Projekt starten
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#arbeiten" class="btn btn-ghost btn-lg magnetic">
+          Portfolio ansehen
+        </a>
+      </div>
+
+      <div class="hero-browser reveal">
+        <div class="browser-frame">
+          <div class="browser-bar">
+            <span class="browser-dot" style="--c:#ff5f57"></span>
+            <span class="browser-dot" style="--c:#febc2e"></span>
+            <span class="browser-dot" style="--c:#28c840"></span>
+            <div class="browser-url">pixelwerk.studio</div>
+          </div>
+          <div class="browser-body">
+            <div class="mock-nav">
+              <div class="mock-logo"></div>
+              <div class="mock-links">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mock-btn"></div>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-lines">
+                <div class="mock-line w-70"></div>
+                <div class="mock-line w-50"></div>
+                <div class="mock-line w-40 thin"></div>
+              </div>
+              <div class="mock-cta">
+                <div class="mock-pill"></div>
+                <div class="mock-pill outline"></div>
+              </div>
+            </div>
+            <div class="mock-cards">
+              <div class="mock-card mc-1"></div>
+              <div class="mock-card mc-2"></div>
+              <div class="mock-card mc-3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-chip chip-1 reveal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#22c55e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Responsive Design
+        </div>
+        <div class="floating-chip chip-2 reveal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Performance-optimiert
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRUST / STATS BAR ================= -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat reveal">
+        <div class="stat-number" data-count="120">0</div>
+        <div class="stat-label">Projekte realisiert</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-number" data-count="98" data-suffix="%">0</div>
+        <div class="stat-label">Kundenzufriedenheit</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-number" data-count="8" data-suffix="+">0</div>
+        <div class="stat-label">Jahre Erfahrung</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-number" data-count="40" data-suffix="+">0</div>
+        <div class="stat-label">Branchen betreut</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LEISTUNGEN ================= -->
+  <section class="section" id="leistungen">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Leistungen</span>
+        <h2 class="section-title">Alles für Ihren digitalen Auftritt</h2>
+        <p class="section-desc">
+          Von der ersten Skizze bis zum fertigen Launch — wir gestalten Websites,
+          die Ihre Marke sichtbar machen und Besucher in Kunden verwandeln.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Webdesign</h3>
+          <p>Individuelle, responsive Websites, die auf jedem Gerät überzeugen und Ihre Marke perfekt in Szene setzen.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Nutzerzentrierte Interfaces mit klarer Struktur — durchdacht, intuitiv und auf Conversion ausgelegt.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3l3.5 7L22 11l-5.5 5 1.5 8-6-4-6 4 1.5-8L2 11l6.5-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Branding &amp; Identity</h3>
+          <p>Logo, Farbwelt und visuelle Sprache aus einem Guss — für einen unverwechselbaren Markenauftritt.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 6h18l-2 9H5L3 6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8" cy="20" r="1.4" fill="currentColor"/><circle cx="17" cy="20" r="1.4" fill="currentColor"/></svg>
+          </div>
+          <h3>E-Commerce Design</h3>
+          <p>Onlineshops mit durchdachter Customer Journey, die Vertrauen schaffen und den Umsatz steigern.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 12l5-5M4 12l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 6v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Landingpages</h3>
+          <p>Fokussierte, schnell ladende Seiten für Kampagnen mit maximaler Conversion-Rate.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg>
+          </div>
+          <h3>Wartung &amp; Support</h3>
+          <p>Zuverlässige Betreuung nach dem Launch — Updates, Monitoring und laufende Optimierung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ARBEITEN / PORTFOLIO ================= -->
+  <section class="section section-dark" id="arbeiten">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Ausgewählte Arbeiten</h2>
+        <p class="section-desc">Ein Einblick in Projekte, bei denen Design und Strategie Hand in Hand gehen.</p>
+      </div>
+
+      <div class="work-grid">
+        <a href="#kontakt" class="work-card reveal">
+          <div class="work-thumb thumb-1">
+            <div class="thumb-mock"><div class="tm-bar"></div><div class="tm-body"><div class="tm-line w-60"></div><div class="tm-line w-40"></div></div></div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">Fintech</span>
+            <h3>Fintech Rebrand &amp; Website</h3>
+            <p>Komplettes Redesign inkl. Markenidentität und responsivem Web-Auftritt.</p>
+          </div>
+        </a>
+
+        <a href="#kontakt" class="work-card reveal">
+          <div class="work-thumb thumb-2">
+            <div class="thumb-mock"><div class="tm-bar"></div><div class="tm-body"><div class="tm-line w-60"></div><div class="tm-line w-40"></div></div></div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">E-Commerce</span>
+            <h3>Boutique Onlineshop</h3>
+            <p>Elegantes Shopdesign mit Fokus auf Produktinszenierung und Conversion.</p>
+          </div>
+        </a>
+
+        <a href="#kontakt" class="work-card reveal">
+          <div class="work-thumb thumb-3">
+            <div class="thumb-mock"><div class="tm-bar"></div><div class="tm-body"><div class="tm-line w-60"></div><div class="tm-line w-40"></div></div></div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">SaaS</span>
+            <h3>SaaS Landingpage</h3>
+            <p>Konversionsstarke Landingpage mit klarer Struktur und starkem Storytelling.</p>
+          </div>
+        </a>
+
+        <a href="#kontakt" class="work-card reveal">
+          <div class="work-thumb thumb-4">
+            <div class="thumb-mock"><div class="tm-bar"></div><div class="tm-body"><div class="tm-line w-60"></div><div class="tm-line w-40"></div></div></div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">Gastronomie</span>
+            <h3>Restaurant Website</h3>
+            <p>Warme Bildsprache, Online-Reservierung und Speisekarte in modernem Layout.</p>
+          </div>
+        </a>
+
+        <a href="#kontakt" class="work-card reveal">
+          <div class="work-thumb thumb-5">
+            <div class="thumb-mock"><div class="tm-bar"></div><div class="tm-body"><div class="tm-line w-60"></div><div class="tm-line w-40"></div></div></div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">Fitness</span>
+            <h3>Fitness App Landingpage</h3>
+            <p>Dynamisches Design mit starken Visuals für Kundengewinnung.</p>
+          </div>
+        </a>
+
+        <a href="#kontakt" class="work-card reveal">
+          <div class="work-thumb thumb-6">
+            <div class="thumb-mock"><div class="tm-bar"></div><div class="tm-body"><div class="tm-line w-60"></div><div class="tm-line w-40"></div></div></div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">Kreativagentur</span>
+            <h3>Portfolio-Website</h3>
+            <p>Minimalistisches Portfolio mit Fokus auf große Typografie und Bewegung.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROZESS ================= -->
+  <section class="section" id="prozess">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Prozess</span>
+        <h2 class="section-title">So arbeiten wir</h2>
+        <p class="section-desc">Ein klarer, transparenter Ablauf von der Idee bis zum erfolgreichen Launch.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card reveal">
+          <div class="process-number">01</div>
+          <h3>Kennenlernen</h3>
+          <p>Wir verstehen Ihre Ziele, Zielgruppe und Markenwerte in einem persönlichen Gespräch.</p>
+        </div>
+        <div class="process-card reveal">
+          <div class="process-number">02</div>
+          <h3>Konzept &amp; Design</h3>
+          <p>Wireframes und Designentwürfe, individuell abgestimmt auf Ihre Vision.</p>
+        </div>
+        <div class="process-card reveal">
+          <div class="process-number">03</div>
+          <h3>Umsetzung</h3>
+          <p>Pixelgenaue, performante Entwicklung mit regelmäßigen Feedback-Runden.</p>
+        </div>
+        <div class="process-card reveal">
+          <div class="process-number">04</div>
+          <h3>Launch &amp; Wachstum</h3>
+          <p>Go-live, laufende Optimierung und langfristige Betreuung Ihres Projekts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="section section-dark" id="stimmen">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Referenzen</span>
+        <h2 class="section-title">Was unsere Kunden sagen</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>„PIXELWERK hat unsere Website komplett neu gedacht. Das Ergebnis: mehr Anfragen und durchweg positives Feedback von Kunden.“</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MK</div>
+            <div>
+              <div class="author-name">M. Keller</div>
+              <div class="author-role">Geschäftsführer, Keller GmbH</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>„Professionell, kreativ und termintreu. Die neue Landingpage hat unsere Conversion-Rate spürbar verbessert.“</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SL</div>
+            <div>
+              <div class="author-name">S. Lang</div>
+              <div class="author-role">Marketingleiterin, NovaTech</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>„Ein Team, das zuhört und liefert. Vom ersten Konzept bis zum Launch hat alles reibungslos funktioniert.“</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RT</div>
+            <div>
+              <div class="author-name">R. Thoma</div>
+              <div class="author-role">Gründerin, Studio Thoma</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="cta-section">
+    <div class="container cta-inner reveal">
+      <h2>Bereit für eine Website, die wirklich überzeugt?</h2>
+      <p>Lassen Sie uns gemeinsam ein digitales Erlebnis schaffen, das Ihre Marke voranbringt.</p>
+      <a href="#kontakt" class="btn btn-primary btn-lg magnetic">Kostenloses Erstgespräch sichern</a>
+    </div>
+  </section>
+
+  <!-- ================= KONTAKT ================= -->
+  <section class="section" id="kontakt">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <span class="section-tag">Kontakt</span>
+        <h2 class="section-title">Lassen Sie uns sprechen</h2>
+        <p class="section-desc">
+          Erzählen Sie uns von Ihrem Projekt — wir melden uns innerhalb von 24 Stunden
+          mit den nächsten Schritten.
+        </p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4V4z" stroke="currentColor" stroke-width="1.6"/><path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="1.6"/></svg>
+            hallo@pixelwerk.studio
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L7.9 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2.3z" stroke="currentColor" stroke-width="1.6"/></svg>
+            +49 (0) 30 1234 5678
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+            Berlin, Deutschland
+          </div>
+        </div>
+
+        <div class="social-row">
+          <a href="#" aria-label="Instagram" class="social-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="social-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 13v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" aria-label="Behance" class="social-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 7h6a3 3 0 0 1 0 6H3V7zM3 13h7a3 3 0 0 1 0 6H3v-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M15 12a4 4 0 0 1 7-2M14.5 15h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Ihr Name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="ihre@email.de" required />
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="project">Projektart</label>
+          <select id="project" name="project">
+            <option>Webdesign</option>
+            <option>UI/UX Design</option>
+            <option>Branding</option>
+            <option>E-Commerce</option>
+            <option>Sonstiges</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" rows="4" placeholder="Erzählen Sie uns von Ihrem Projekt..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">
+          Nachricht senden
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="logo">
+        <span class="logo-mark">P</span>
+        <span class="logo-text">PIXELWERK</span>
+      </a>
+      <p>Grafikdesign-Studio für moderne, conversion-starke Websites.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Leistungen</h4>
+      <a href="#leistungen">Webdesign</a>
+      <a href="#leistungen">UI/UX Design</a>
+      <a href="#leistungen">Branding</a>
+      <a href="#leistungen">E-Commerce</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Studio</h4>
+      <a href="#arbeiten">Arbeiten</a>
+      <a href="#prozess">Prozess</a>
+      <a href="#stimmen">Referenzen</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <a href="mailto:hallo@pixelwerk.studio">hallo@pixelwerk.studio</a>
+      <a href="tel:+493012345678">+49 (0) 30 1234 5678</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 PIXELWERK. Alle Rechte vorbehalten.</p>
+    <p>Design &amp; Entwicklung mit ♥ in Berlin</p>
+  </div>
+</footer>
+
+<a href="#top" class="scroll-top" id="scrollTop" aria-label="Nach oben scrollen">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
